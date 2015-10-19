@@ -1,40 +1,63 @@
+<!-- 
+- 3X3 Grid
+- div/button/span
+- add button
+- X button 
+- y button
+OR 
+- add click event to each title
+- onclick change to X or y
+- win_array -
+[
+	[1a,2a,3a]
+	[1b,2b,3b]
+	[1c,2c,3c]
+	[1a,2a,3a]
+	[1b,2b,3b]
+	[1c,2c,3c]
+	[1a,2a,3a]
+	[1b,2b,3b]
+]
+ -->
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div id="title-wrapper">
+		<h1>TIC TAC TOE</h1>
+		<div class="player-buttons">	
+			<button id="one-player">1 Player</button>
+			<button id="two-player">2 Players</button>
+		</div>
+		<div id="ttt-message">Your Turn</div>
+	</div>
+
 	<div id="game-wrapper">
 
 		<div class="board-wrapper">
-			<div class="board-row">
-				<div class="box">
-				</div>
-				<div class="box">
-				</div>
-				<div class="box">
-				</div>
+			<div id="board-row-1" class="board-row">
+				<button id="A1" class="box"></button>
+				<button id="A2" class="box"></button>
+				<button id="A3" class="box"></button>
 			</div>
 
-			<div class="board-row">
-				<div class="box">
-				</div>
-				<div class="box">
-				</div>
-				<div class="box">
-				</div>
+			<div id="board-row-2" class="board-row">
+				<button id="B1" class="box"></button>
+				<button id="B2" class="box"></button>
+				<button id="B3" class="box"></button>
 			</div>
 
-			<div class="board-row">
-				<div class="box">
-				</div>
-				<div class="box">
-				</div>
-				<div class="box">
-				</div>
+			<div id="board-row-3" class="board-row">
+				<button id="C1" class="box"></button>
+				<button id="C2" class="box"></button>
+				<button id="C3" class="box"></button>
 			</div>
 		</div>
 
