@@ -25,7 +25,7 @@ OR
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>Tic Tac Toe Game</title>
 	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -33,39 +33,35 @@ OR
 	<div id="title-wrapper">
 		<h1>TIC TAC TOE</h1>
 		<div class="player-buttons">	
-			<button id="one-player">1 Player</button>
-			<button id="two-player">2 Players</button>
+			<button id="one-player" onclick="onePlayer()">1 Player</button>
+			<button id="two-player" onclick="twoPlayers()">2 Players</button>
 		</div>
-		<div id="ttt-message">Your Turn</div>
+		<div id="message">Start Game</div>
 	</div>
 
 	<div id="game-wrapper">
 
-		<div class="board-wrapper">
+		<div id="board-wrapper">
 			<div id="board-row-1" class="board-row">
-				<button id="A1" class="box"></button>
-				<button id="A2" class="box"></button>
-				<button id="A3" class="box"></button>
+				<button id="A1" class="box empty" onclick="markSqr('A1')">-</button>
+				<button id="A2" class="box empty" onclick="markSqr('A2')">-</button>
+				<button id="A3" class="box empty" onclick="markSqr('A3')">-</button>
 			</div>
 
 			<div id="board-row-2" class="board-row">
-				<button id="B1" class="box"></button>
-				<button id="B2" class="box"></button>
-				<button id="B3" class="box"></button>
+				<button id="B1" class="box empty" onclick="markSqr('B1')">-</button>
+				<button id="B2" class="box empty" onclick="markSqr('B2')">-</button>
+				<button id="B3" class="box empty" onclick="markSqr('B3')">-</button>
 			</div>
 
 			<div id="board-row-3" class="board-row">
-				<button id="C1" class="box"></button>
-				<button id="C2" class="box"></button>
-				<button id="C3" class="box"></button>
+				<button id="C1" class="box empty" onclick="markSqr('C1')">-</button>
+				<button id="C2" class="box empty" onclick="markSqr('C2')">-</button>
+				<button id="C3" class="box empty" onclick="markSqr('C3')">-</button>
 			</div>
-		</div>
-
-		<div class="game-buttons">
-			<button clase="start-game-buttons">1 Player</button>
-			<button class="start-game-buttons">2 Players</button>
 		</div>
 
 	</div>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

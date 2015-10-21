@@ -18,7 +18,7 @@ h1 {
 	font-size: 48px;
 }
 
-#ttt-message {
+#message {
 	font-size: 30px;
 	font-weight:bold;
 	background-color: green;
@@ -40,48 +40,53 @@ h1 {
 
 #game-wrapper {
 	padding: 30px;
-	max-width: 640px;
-	min-width: 320px;
-	width: 100%;
-	margin: auto;
-	overflow: hidden;
 
 	/*temp*/
 	border: 1px solid red;
 }
+	#game-wrapper #board-wrapper {
+		background-color: black;
+		max-width: 640px;
+		min-width: 320px;
+		width: 75%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	#game-wrapper .board-row {
+		display: block;
+		padding: 0px;
+		height: auto;
+		overflow: hidden;
+		margin-bottom: 5%;
+	}
+		#game-wrapper .board-row .empty {
+			color: transparent;
+		}
+		#game-wrapper .board-row .box {
+			display: inline-block;
+			width: 30%;
+			float:left;
+			background: white;
+			border:none;
+			margin-left: 5%;
+			padding: 30px 0;
+			font-size: 80px;
+		}
+		#game-wrapper .board-row button:first-child {
+			margin:0;
+		}
+	
 
-#game-wrapper .board-row {
-	display: block;
-	padding: 10px;
-	text-align: center;
+	#game-wrapper #board-row-3 {
+		margin:0;
+	}
+	#game-wrapper .message-play1 {
+		
+	}
 
-	/*temp*/
-	border: 1px solid red;
-	height: 160px;
-}
 
-#game-wrapper .board-row .box {
-	display: inline-block;
-	max-width: 160px;
-	width: 30%;
 
-	/*temp*/
-	border: 1px solid red;
-	height: 100%;
-}
 
-#game-wrapper .game-buttons {
-	width: 100%;
 
-	/*temp*/
-	border: 1px solid red;
-}
 
-#game-wrapper .game-buttons button {
-	width: 80px;
-	background-color: black;
-	color: white;
 
-	/*temp*/
-	/*border: 1px solid red;*/
-}
